@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('createSlide', 'SlideController@store');
+Route::get('slides', 'SlideController@read');
